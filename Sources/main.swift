@@ -1,1 +1,12 @@
 print("oh well hello")
+
+var packetBuffer = PacketBuffer()
+packetBuffer.append(1 as UInt8)
+packetBuffer.append(2 as UInt16)
+packetBuffer.append(3 as UInt32)
+packetBuffer.append(4 as UInt64)
+print(packetBuffer)
+print(packetBuffer.readUInt8())
+print(packetBuffer.readUInt16())
+print(packetBuffer.readUInt32())
+print(packetBuffer.readUInt64())
